@@ -20,6 +20,12 @@ export default defineConfig({
             },
         }),
     ],
+    server: {
+        hmr: {
+            host: 'localhost',
+            port: 5173,
+        },
+    },
     build: {
         rollupOptions: {
             external: ['@popperjs/core']
